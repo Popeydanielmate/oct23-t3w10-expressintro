@@ -1,0 +1,18 @@
+meta {
+  name: /pokemon Hello world POST route
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/pokemon/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "favouritePokemon": "squirtle",
+    "favouriteFood": "mango"
+  }
+}
